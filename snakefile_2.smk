@@ -4,6 +4,10 @@
 #   input:
 #     "output/final"
 
+#Establish snakefile paths.                                                                                                             
+SNAKEFILE = workflow.snakefile                                                                                                          
+REPO_DIR = os.path.dirname(os.path.abspath(SNAKEFILE))                                                                                  
+
 print (workflow.snakefile)
 
 rule A:
@@ -12,10 +16,10 @@ rule A:
   output:
     "output/final"
   shell:
-    "touch {output}"
+    "bash {REPO_DIR}/scripts/touch.sh {output}"
 
 rule B:
   output:
     "output/fA"
   shell:
-    "touch {output}"
+    "bash {REPO_DIR}/scripts/touch.sh {output}"

@@ -8,7 +8,7 @@
 SNAKEFILE = workflow.snakefile                                                                                                          
 REPO_DIR = os.path.dirname(os.path.abspath(SNAKEFILE))                                                                                  
 
-print (workflow.snakefile)
+print ("snakefile = "+workflow.snakefile)
 
 rule A:
   input:

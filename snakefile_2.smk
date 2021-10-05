@@ -22,4 +22,4 @@ rule B:
   output:
     "output/fA"
   shell:
-    "bash {REPO_DIR}/scripts/touch.sh {output}"
+    "bash scripts/touch.sh {output}"

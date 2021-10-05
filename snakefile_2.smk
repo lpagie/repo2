@@ -22,4 +22,4 @@ rule B:
   output:
     "output/fA"
   script:
-    "scripts/touch.py {output}"
+    "scripts/touch.py"

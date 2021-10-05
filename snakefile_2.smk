@@ -21,5 +21,5 @@ rule A:
 rule B:
   output:
     "output/fA"
-  shell:
-    "bash {REPO_DIR}/scripts/touch.sh {output}"
+  script:
+    "scripts/touch.py"

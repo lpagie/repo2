@@ -10,13 +10,13 @@ REPO_DIR = os.path.dirname(SNAKEFILE)
 
 print ("snakefile = "+workflow.snakefile)
 
-rule A:
-  input:
-    "output/fA"
-  output:
-    "output/final"
-  shell:
-    "bash {REPO_DIR}/scripts/touch.sh {output}"
+#rule A:
+#  input:
+#    "output/fA"
+#  output:
+#    "output/final"
+#  shell:
+#    "bash {REPO_DIR}/scripts/touch.sh {output}"
 
 rule B:
   output:

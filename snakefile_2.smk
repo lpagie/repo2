@@ -11,3 +11,9 @@
 #     "output/fA"
 #   script:
 #     "scripts/touch.py"
+
+rule nonsense:
+  input:
+    workflow.source_path('snakefile_2.smk')
+  output:
+    "nonsense.out"

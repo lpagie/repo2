@@ -11,3 +11,9 @@
 #     "output/fA"
 #   script:
 #     "scripts/touch.py"
+
+rule nonsense:
+  input:
+    "nonsense.in"
+  output:
+    "nonsense.out"

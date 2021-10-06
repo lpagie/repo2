@@ -16,4 +16,6 @@ rule nonsense:
   input:
     workflow.source_path('snakefile_2.smk')
   output:
-    "nonsense.out"
+    "output/nonsense.out"
+  script:
+    "scripts/touch.py"

@@ -25,3 +25,6 @@ rule usefull:
     "output/final_wf2"
   script:
     "scripts/touch.py"
+
+def foo():
+  return "test string"
